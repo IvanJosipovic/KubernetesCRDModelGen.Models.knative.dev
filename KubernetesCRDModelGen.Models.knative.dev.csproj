@@ -2,5 +2,6 @@
   <PropertyGroup>
     <PackageId>KubernetesCRDModelGen.Models.knative.dev</PackageId>
     <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.knative.dev</RepositoryUrl>
+    <Description>C# models for Kubernetes CRDs in group knative.dev</Description>
   </PropertyGroup>
 </Project>
