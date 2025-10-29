@@ -5,7 +5,7 @@ metadata:
     eventing.knative.dev/source: "true"
     duck.knative.dev/source: "true"
     knative.dev/crd-install: "true"
-    app.kubernetes.io/version: 1.19.8
+    app.kubernetes.io/version: 1.20.0
     app.kubernetes.io/name: knative-eventing
   name: integrationsources.sources.knative.dev
 spec:
@@ -288,6 +288,9 @@ spec:
                             - name
                             type: object
                         type: object
+                      serviceAccountName:
+                        description: Optional ServiceAccount to assign to pod. This enables the pod default credentials to be used instead of the auth secret.
+                        type: string
                     type: object
                 type: object
               template:

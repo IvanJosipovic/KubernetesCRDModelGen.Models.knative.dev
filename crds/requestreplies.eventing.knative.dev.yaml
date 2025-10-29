@@ -3,7 +3,7 @@ kind: CustomResourceDefinition
 metadata:
   labels:
     knative.dev/crd-install: "true"
-    app.kubernetes.io/version: 1.19.8
+    app.kubernetes.io/version: 1.20.0
     app.kubernetes.io/name: knative-eventing
   name: requestreplies.eventing.knative.dev
 spec:
@@ -25,6 +25,8 @@ spec:
     - eventing
     kind: RequestReply
     plural: requestreplies
+    shortNames:
+    - rr
     singular: requestreply
   scope: Namespaced
   versions:
@@ -64,11 +66,6 @@ spec:
               replyAttribute:
                 description: The name of the cloudevents attribute which will hold the correlation id for an event which will be treated as a reply.
                 type: string
-              secrets:
-                description: A list of the names of one or more secrets used to sign the correlation ids and reply ids. The secrets must be in the same namespace as the requestreply resource.
-                items:
-                  type: string
-                type: array
               timeout:
                 description: A ISO8601 string representing how long RequestReply holds onto an incoming request before it times out without a reply.
                 type: string
@@ -151,6 +148,12 @@ spec:
                       description: Type of condition.
                       type: string
                 type: array
+              desiredReplicas:
+                description: The current replicas (StatefulSet pod + trigger) that are desired
+                type: integer
+              readyReplicas:
+                description: The current replicas (StatefulSet pod + trigger) that are ready
+                type: integer
               address:
                 description: RequestReply is Addressable. It exposes the endpoint as an URI to get events delivered.
                 properties:
