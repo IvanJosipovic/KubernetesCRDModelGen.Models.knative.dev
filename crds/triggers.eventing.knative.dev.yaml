@@ -9,11 +9,11 @@ metadata:
 spec:
   group: eventing.knative.dev
   names:
+    kind: Trigger
     categories:
     - all
     - knative
     - eventing
-    kind: Trigger
     plural: triggers
     singular: trigger
   scope: Namespaced

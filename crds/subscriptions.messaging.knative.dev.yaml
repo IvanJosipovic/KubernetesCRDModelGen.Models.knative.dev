@@ -9,11 +9,11 @@ metadata:
 spec:
   group: messaging.knative.dev
   names:
+    kind: Subscription
     categories:
     - all
     - knative
     - messaging
-    kind: Subscription
     plural: subscriptions
     shortNames:
     - sub

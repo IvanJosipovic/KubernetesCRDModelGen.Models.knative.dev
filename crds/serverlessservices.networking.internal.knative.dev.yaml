@@ -10,10 +10,10 @@ metadata:
 spec:
   group: networking.internal.knative.dev
   names:
+    kind: ServerlessService
     categories:
     - knative-internal
     - networking
-    kind: ServerlessService
     plural: serverlessservices
     shortNames:
     - sks

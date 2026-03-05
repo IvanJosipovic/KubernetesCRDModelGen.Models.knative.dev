@@ -10,11 +10,11 @@ metadata:
 spec:
   group: eventing.knative.dev
   names:
+    kind: EventTransform
     categories:
     - all
     - knative
     - eventing
-    kind: EventTransform
     plural: eventtransforms
     singular: eventtransform
   scope: Namespaced

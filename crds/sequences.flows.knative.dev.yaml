@@ -10,11 +10,11 @@ metadata:
 spec:
   group: flows.knative.dev
   names:
+    kind: Sequence
     categories:
     - all
     - knative
     - flows
-    kind: Sequence
     plural: sequences
     singular: sequence
   scope: Namespaced

@@ -19,11 +19,11 @@ spec:
       - v1beta1
   group: eventing.knative.dev
   names:
+    kind: EventType
     categories:
     - all
     - knative
     - eventing
-    kind: EventType
     plural: eventtypes
     singular: eventtype
   scope: Namespaced

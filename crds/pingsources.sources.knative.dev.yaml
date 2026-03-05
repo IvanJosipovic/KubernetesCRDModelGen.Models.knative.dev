@@ -29,11 +29,11 @@ spec:
       - v1beta1
   group: sources.knative.dev
   names:
+    kind: PingSource
     categories:
     - all
     - knative
     - sources
-    kind: PingSource
     plural: pingsources
     singular: pingsource
   scope: Namespaced

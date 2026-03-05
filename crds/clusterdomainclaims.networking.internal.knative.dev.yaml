@@ -10,10 +10,10 @@ metadata:
 spec:
   group: networking.internal.knative.dev
   names:
+    kind: ClusterDomainClaim
     categories:
     - knative-internal
     - networking
-    kind: ClusterDomainClaim
     plural: clusterdomainclaims
     shortNames:
     - cdc

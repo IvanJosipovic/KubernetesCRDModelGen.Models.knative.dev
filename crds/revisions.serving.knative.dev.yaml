@@ -9,11 +9,11 @@ metadata:
 spec:
   group: serving.knative.dev
   names:
+    kind: Revision
     categories:
     - all
     - knative
     - serving
-    kind: Revision
     plural: revisions
     shortNames:
     - rev

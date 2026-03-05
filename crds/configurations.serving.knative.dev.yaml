@@ -10,11 +10,11 @@ metadata:
 spec:
   group: serving.knative.dev
   names:
+    kind: Configuration
     categories:
     - all
     - knative
     - serving
-    kind: Configuration
     plural: configurations
     shortNames:
     - config

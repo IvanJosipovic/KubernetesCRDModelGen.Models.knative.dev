@@ -9,10 +9,10 @@ metadata:
 spec:
   group: autoscaling.internal.knative.dev
   names:
+    kind: Metric
     categories:
     - knative-internal
     - autoscaling
-    kind: Metric
     plural: metrics
     singular: metric
   scope: Namespaced

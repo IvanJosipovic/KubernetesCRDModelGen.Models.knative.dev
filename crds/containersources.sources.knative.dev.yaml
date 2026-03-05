@@ -11,11 +11,11 @@ metadata:
 spec:
   group: sources.knative.dev
   names:
+    kind: ContainerSource
     categories:
     - all
     - knative
     - sources
-    kind: ContainerSource
     plural: containersources
     singular: containersource
   scope: Namespaced

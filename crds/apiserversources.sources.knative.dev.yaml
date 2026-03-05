@@ -39,11 +39,11 @@ metadata:
 spec:
   group: sources.knative.dev
   names:
+    kind: ApiServerSource
     categories:
     - all
     - knative
     - sources
-    kind: ApiServerSource
     plural: apiserversources
     singular: apiserversource
   scope: Namespaced

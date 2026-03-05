@@ -10,12 +10,12 @@ metadata:
 spec:
   group: sinks.knative.dev
   names:
+    kind: JobSink
     categories:
     - all
     - knative
     - eventing
     - sink
-    kind: JobSink
     plural: jobsinks
     singular: jobsink
   scope: Namespaced

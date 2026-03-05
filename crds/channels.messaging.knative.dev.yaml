@@ -11,12 +11,12 @@ metadata:
 spec:
   group: messaging.knative.dev
   names:
+    kind: Channel
     categories:
     - all
     - knative
     - messaging
     - channel
-    kind: Channel
     plural: channels
     shortNames:
     - ch

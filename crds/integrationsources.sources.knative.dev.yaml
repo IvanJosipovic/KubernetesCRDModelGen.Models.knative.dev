@@ -11,11 +11,11 @@ metadata:
 spec:
   group: sources.knative.dev
   names:
+    kind: IntegrationSource
     categories:
     - all
     - knative
     - sources
-    kind: IntegrationSource
     plural: integrationsources
     singular: integrationsource
   scope: Namespaced
