@@ -9,10 +9,10 @@ metadata:
 spec:
   group: autoscaling.internal.knative.dev
   names:
+    kind: PodAutoscaler
     categories:
     - knative-internal
     - autoscaling
-    kind: PodAutoscaler
     plural: podautoscalers
     shortNames:
     - kpa

@@ -9,10 +9,10 @@ metadata:
 spec:
   group: caching.internal.knative.dev
   names:
+    kind: Image
     categories:
     - knative-internal
     - caching
-    kind: Image
     plural: images
     singular: image
   scope: Namespaced

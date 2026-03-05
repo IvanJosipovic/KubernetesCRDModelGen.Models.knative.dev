@@ -10,10 +10,10 @@ metadata:
 spec:
   group: networking.internal.knative.dev
   names:
+    kind: Ingress
     categories:
     - knative-internal
     - networking
-    kind: Ingress
     plural: ingresses
     shortNames:
     - kingress

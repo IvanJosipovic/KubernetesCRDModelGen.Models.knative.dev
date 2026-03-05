@@ -9,11 +9,11 @@ metadata:
 spec:
   group: eventing.knative.dev
   names:
+    kind: EventPolicy
     categories:
     - all
     - knative
     - eventing
-    kind: EventPolicy
     plural: eventpolicies
     singular: eventpolicy
   scope: Namespaced

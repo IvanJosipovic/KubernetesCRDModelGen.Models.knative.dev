@@ -9,11 +9,11 @@ metadata:
 spec:
   group: serving.knative.dev
   names:
+    kind: DomainMapping
     categories:
     - all
     - knative
     - serving
-    kind: DomainMapping
     plural: domainmappings
     shortNames:
     - dm

@@ -10,11 +10,11 @@ metadata:
 spec:
   group: eventing.knative.dev
   names:
+    kind: Broker
     categories:
     - all
     - knative
     - eventing
-    kind: Broker
     plural: brokers
     singular: broker
   scope: Namespaced

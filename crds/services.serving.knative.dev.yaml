@@ -11,11 +11,11 @@ metadata:
 spec:
   group: serving.knative.dev
   names:
+    kind: Service
     categories:
     - all
     - knative
     - serving
-    kind: Service
     plural: services
     shortNames:
     - kservice

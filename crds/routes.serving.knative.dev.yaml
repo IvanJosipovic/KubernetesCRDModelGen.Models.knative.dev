@@ -10,11 +10,11 @@ metadata:
 spec:
   group: serving.knative.dev
   names:
+    kind: Route
     categories:
     - all
     - knative
     - serving
-    kind: Route
     plural: routes
     shortNames:
     - rt

@@ -12,12 +12,12 @@ metadata:
 spec:
   group: sources.knative.dev
   names:
+    kind: SinkBinding
     categories:
     - all
     - knative
     - sources
     - bindings
-    kind: SinkBinding
     plural: sinkbindings
     singular: sinkbinding
   scope: Namespaced

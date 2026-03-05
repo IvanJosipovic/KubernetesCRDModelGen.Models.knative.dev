@@ -10,10 +10,10 @@ metadata:
 spec:
   group: networking.internal.knative.dev
   names:
+    kind: Certificate
     categories:
     - knative-internal
     - networking
-    kind: Certificate
     plural: certificates
     shortNames:
     - kcert

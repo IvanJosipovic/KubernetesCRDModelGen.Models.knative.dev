@@ -10,12 +10,12 @@ metadata:
 spec:
   group: sinks.knative.dev
   names:
+    kind: IntegrationSink
     categories:
     - all
     - knative
     - eventing
     - sink
-    kind: IntegrationSink
     plural: integrationsinks
     singular: integrationsink
   scope: Namespaced

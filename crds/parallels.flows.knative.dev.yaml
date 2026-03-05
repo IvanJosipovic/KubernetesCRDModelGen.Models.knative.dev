@@ -10,11 +10,11 @@ metadata:
 spec:
   group: flows.knative.dev
   names:
+    kind: Parallel
     categories:
     - all
     - knative
     - flows
-    kind: Parallel
     plural: parallels
     singular: parallel
   scope: Namespaced
