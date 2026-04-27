@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.networking.@internal.knative.dev;
 /// revision pods.
 /// See: https://knative.page.link/naxz for details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ServerlessServiceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ServerlessService>
@@ -38,14 +38,14 @@ public partial class V1alpha1ServerlessServiceList : IKubernetesObject<V1ListMet
 
     /// <summary>List of V1alpha1ServerlessService objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1alpha1ServerlessService>? Items { get; set; }
+    public required IList<V1alpha1ServerlessService> Items { get; set; }
 }
 
 /// <summary>
 /// ObjectRef defines the resource that this ServerlessService
 /// is responsible for making &quot;serverless&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessServiceSpecObjectRef
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1ServerlessServiceSpecObjectRef
 /// Spec is the desired state of the ServerlessService.
 /// More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessServiceSpec
 {
@@ -140,7 +140,7 @@ public partial class V1alpha1ServerlessServiceSpec
 /// Condition defines a readiness condition for a Knative resource.
 /// See: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessServiceStatusConditions
 {
@@ -180,7 +180,7 @@ public partial class V1alpha1ServerlessServiceStatusConditions
 /// Status is the current state of the ServerlessService.
 /// More info: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ServerlessServiceStatus
 {
@@ -225,7 +225,7 @@ public partial class V1alpha1ServerlessServiceStatus
 /// revision pods.
 /// See: https://knative.page.link/naxz for details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ServerlessService : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ServerlessServiceSpec?>, IStatus<V1alpha1ServerlessServiceStatus?>
