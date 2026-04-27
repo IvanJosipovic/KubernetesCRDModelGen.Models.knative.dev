@@ -17,7 +17,7 @@ namespace KubernetesCRDModelGen.Models.serving.knative.dev;
 /// &quot;latest ready revision&quot; changes, and smoothly rolling out latest revisions.
 /// See also: https://github.com/knative/serving/blob/main/docs/spec/overview.md#route
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1RouteList : IKubernetesObject<V1ListMeta>, IItems<V1Route>
@@ -40,11 +40,11 @@ public partial class V1RouteList : IKubernetesObject<V1ListMeta>, IItems<V1Route
 
     /// <summary>List of V1Route objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1Route>? Items { get; set; }
+    public required IList<V1Route> Items { get; set; }
 }
 
 /// <summary>TrafficTarget holds a single entry of the routing table for a Route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1RouteSpecTraffic
 {
@@ -105,7 +105,7 @@ public partial class V1RouteSpecTraffic
 }
 
 /// <summary>Spec holds the desired state of the Route (from the client).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1RouteSpec
 {
@@ -118,7 +118,7 @@ public partial class V1RouteSpec
 }
 
 /// <summary>Address holds the information needed for a Route to be the target of an event.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1RouteStatusAddress
 {
@@ -145,7 +145,7 @@ public partial class V1RouteStatusAddress
 /// Condition defines a readiness condition for a Knative resource.
 /// See: https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1RouteStatusConditions
 {
@@ -182,7 +182,7 @@ public partial class V1RouteStatusConditions
 }
 
 /// <summary>TrafficTarget holds a single entry of the routing table for a Route.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1RouteStatusTraffic
 {
@@ -243,7 +243,7 @@ public partial class V1RouteStatusTraffic
 }
 
 /// <summary>Status communicates the observed state of the Route (from the controller).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1RouteStatus
 {
@@ -296,7 +296,7 @@ public partial class V1RouteStatus
 /// &quot;latest ready revision&quot; changes, and smoothly rolling out latest revisions.
 /// See also: https://github.com/knative/serving/blob/main/docs/spec/overview.md#route
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Route : IKubernetesObject<V1ObjectMeta>, ISpec<V1RouteSpec?>, IStatus<V1RouteStatus?>

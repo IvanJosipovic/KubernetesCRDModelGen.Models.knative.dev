@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.eventing.knative.dev;
 /// <summary>EventType represents a type of event that can be consumed from a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta3EventTypeList : IKubernetesObject<V1ListMeta>, IItems<V1beta3EventType>
@@ -33,11 +33,11 @@ public partial class V1beta3EventTypeList : IKubernetesObject<V1ListMeta>, IItem
 
     /// <summary>List of V1beta3EventType objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta3EventType>? Items { get; set; }
+    public required IList<V1beta3EventType> Items { get; set; }
 }
 
 /// <summary>Reference a resource. For example, Broker.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta3EventTypeSpecReference
 {
@@ -62,7 +62,7 @@ public partial class V1beta3EventTypeSpecReference
     public string? Address { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta3EventTypeSpecAttributes
 {
@@ -80,7 +80,7 @@ public partial class V1beta3EventTypeSpecAttributes
 }
 
 /// <summary>Spec defines the desired state of the EventType.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta3EventTypeSpec
 {
@@ -97,7 +97,7 @@ public partial class V1beta3EventTypeSpec
     public IList<V1beta3EventTypeSpecAttributes>? Attributes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta3EventTypeStatusConditions
 {
@@ -127,7 +127,7 @@ public partial class V1beta3EventTypeStatusConditions
 }
 
 /// <summary>Status represents the current state of the EventType. This data may be out of date.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta3EventTypeStatus
 {
@@ -145,7 +145,7 @@ public partial class V1beta3EventTypeStatus
 }
 
 /// <summary>EventType represents a type of event that can be consumed from a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta3EventType : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta3EventTypeSpec?>, IStatus<V1beta3EventTypeStatus?>

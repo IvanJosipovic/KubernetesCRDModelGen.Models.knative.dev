@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sources.knative.dev;
 /// <summary>PingSource describes an event source with a fixed payload produced on a specified cron schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1PingSourceList : IKubernetesObject<V1ListMeta>, IItems<V1PingSource>
@@ -33,11 +33,11 @@ public partial class V1PingSourceList : IKubernetesObject<V1ListMeta>, IItems<V1
 
     /// <summary>List of V1PingSource objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1PingSource>? Items { get; set; }
+    public required IList<V1PingSource> Items { get; set; }
 }
 
 /// <summary>CloudEventOverrides defines overrides to control the output format and modifications of the event sent to the sink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PingSourceSpecCeOverrides
 {
@@ -47,7 +47,7 @@ public partial class V1PingSourceSpecCeOverrides
 }
 
 /// <summary>Ref points to an Addressable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PingSourceSpecSinkRef
 {
@@ -69,7 +69,7 @@ public partial class V1PingSourceSpecSinkRef
 }
 
 /// <summary>Sink is a reference to an object that will resolve to a uri to use as the sink.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PingSourceSpecSink
 {
@@ -91,7 +91,7 @@ public partial class V1PingSourceSpecSink
 }
 
 /// <summary>PingSourceSpec defines the desired state of the PingSource (from the client).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PingSourceSpec
 {
@@ -125,7 +125,7 @@ public partial class V1PingSourceSpec
 }
 
 /// <summary>Auth provides the relevant information for OIDC authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PingSourceStatusAuth
 {
@@ -138,7 +138,7 @@ public partial class V1PingSourceStatusAuth
     public IList<string>? ServiceAccountNames { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PingSourceStatusCeAttributes
 {
@@ -151,7 +151,7 @@ public partial class V1PingSourceStatusCeAttributes
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PingSourceStatusConditions
 {
@@ -181,7 +181,7 @@ public partial class V1PingSourceStatusConditions
 }
 
 /// <summary>PingSourceStatus defines the observed state of PingSource (from the controller).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1PingSourceStatus
 {
@@ -219,7 +219,7 @@ public partial class V1PingSourceStatus
 }
 
 /// <summary>PingSource describes an event source with a fixed payload produced on a specified cron schedule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1PingSource : IKubernetesObject<V1ObjectMeta>, ISpec<V1PingSourceSpec?>, IStatus<V1PingSourceStatus?>
