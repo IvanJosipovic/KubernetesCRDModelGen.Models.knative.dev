@@ -238,6 +238,19 @@ public partial class V1alpha1EventTransformStatusConditions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1EventTransformStatusPolicies
+{
+    /// <summary>The API version of the applied EventPolicy. This indicates, which version of EventPolicy is supported by the resource.</summary>
+    [JsonPropertyName("apiVersion")]
+    public string? ApiVersion { get; set; }
+
+    /// <summary>The name of the applied EventPolicy</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventTransformStatusJsonataDeploymentConditions
 {
     /// <summary>Last time the condition transitioned from one status to another.</summary>
@@ -335,6 +348,10 @@ public partial class V1alpha1EventTransformStatus
     /// <summary>Conditions the latest available observations of a resource&apos;s current state.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1alpha1EventTransformStatusConditions>? Conditions { get; set; }
+
+    /// <summary>List of applied EventPolicies</summary>
+    [JsonPropertyName("policies")]
+    public IList<V1alpha1EventTransformStatusPolicies>? Policies { get; set; }
 
     /// <summary>JsonataTransformationStatus is the status associated with JsonataEventTransformationSpec.</summary>
     [JsonPropertyName("jsonata")]

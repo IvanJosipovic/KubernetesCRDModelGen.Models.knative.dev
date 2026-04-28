@@ -3,20 +3,12 @@ kind: CustomResourceDefinition
 metadata:
   labels:
     knative.dev/crd-install: "true"
-    app.kubernetes.io/version: 1.21.2
+    app.kubernetes.io/version: 1.22.0
     app.kubernetes.io/name: knative-eventing
   name: requestreplies.eventing.knative.dev
 spec:
   conversion:
-    strategy: Webhook
-    webhook:
-      clientConfig:
-        service:
-          name: eventing-webhook
-          namespace: knative-eventing
-      conversionReviewVersions:
-      - v1
-      - v1beta1
+    strategy: None
   group: eventing.knative.dev
   names:
     kind: RequestReply
