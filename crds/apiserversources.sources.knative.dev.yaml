@@ -33,7 +33,7 @@ metadata:
     eventing.knative.dev/source: "true"
     duck.knative.dev/source: "true"
     knative.dev/crd-install: "true"
-    app.kubernetes.io/version: 1.21.2
+    app.kubernetes.io/version: 1.22.0
     app.kubernetes.io/name: knative-eventing
   name: apiserversources.sources.knative.dev
 spec:
@@ -101,7 +101,7 @@ spec:
                       description: 'Kind of the resource to watch. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
                       type: string
                     selector:
-                      description: 'LabelSelector filters this source to objects to those resources pass the label selector. More info: http://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors'
+                      description: 'LabelSelector filters this source to objects to those resources pass the label selector. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors'
                       type: object
                       properties:
                         matchExpressions:

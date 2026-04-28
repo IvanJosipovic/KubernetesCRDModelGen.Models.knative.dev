@@ -4,7 +4,7 @@ metadata:
   labels:
     knative.dev/crd-install: "true"
     duck.knative.dev/addressable: "true"
-    app.kubernetes.io/version: 1.21.2
+    app.kubernetes.io/version: 1.22.0
     app.kubernetes.io/name: knative-eventing
   name: eventtransforms.eventing.knative.dev
 spec:
@@ -184,6 +184,18 @@ spec:
                       type: string
                     type:
                       description: Type of condition.
+                      type: string
+                type: array
+              policies:
+                description: List of applied EventPolicies
+                items:
+                  type: object
+                  properties:
+                    apiVersion:
+                      description: The API version of the applied EventPolicy. This indicates, which version of EventPolicy is supported by the resource.
+                      type: string
+                    name:
+                      description: The name of the applied EventPolicy
                       type: string
                 type: array
               jsonata:
