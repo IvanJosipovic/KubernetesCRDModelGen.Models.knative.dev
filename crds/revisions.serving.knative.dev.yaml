@@ -3,7 +3,7 @@ kind: CustomResourceDefinition
 metadata:
   labels:
     app.kubernetes.io/name: knative-serving
-    app.kubernetes.io/version: 1.21.2
+    app.kubernetes.io/version: 1.22.0
     knative.dev/crd-install: "true"
   name: revisions.serving.knative.dev
 spec:
@@ -1478,7 +1478,7 @@ spec:
                   The digests are resolved during the creation of Revision.
                   ContainerStatuses holds the container name and image digests
                   for both serving and non serving containers.
-                  ref: http://bit.ly/image-digests
+                  ref: https://bit.ly/image-digests
                 items:
                   description: ContainerStatus holds the information of container name and image digest value
                   type: object
@@ -1499,7 +1499,7 @@ spec:
                   The digests are resolved during the creation of Revision.
                   ContainerStatuses holds the container name and image digests
                   for both serving and non serving containers.
-                  ref: http://bit.ly/image-digests
+                  ref: https://bit.ly/image-digests
                 items:
                   description: ContainerStatus holds the information of container name and image digest value
                   type: object

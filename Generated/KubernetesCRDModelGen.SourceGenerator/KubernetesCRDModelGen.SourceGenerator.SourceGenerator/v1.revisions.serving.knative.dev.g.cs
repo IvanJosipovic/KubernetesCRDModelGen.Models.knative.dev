@@ -1833,7 +1833,7 @@ public partial class V1RevisionStatus
     /// The digests are resolved during the creation of Revision.
     /// ContainerStatuses holds the container name and image digests
     /// for both serving and non serving containers.
-    /// ref: http://bit.ly/image-digests
+    /// ref: https://bit.ly/image-digests
     /// </summary>
     [JsonPropertyName("containerStatuses")]
     public IList<V1RevisionStatusContainerStatuses>? ContainerStatuses { get; set; }
@@ -1848,7 +1848,7 @@ public partial class V1RevisionStatus
     /// The digests are resolved during the creation of Revision.
     /// ContainerStatuses holds the container name and image digests
     /// for both serving and non serving containers.
-    /// ref: http://bit.ly/image-digests
+    /// ref: https://bit.ly/image-digests
     /// </summary>
     [JsonPropertyName("initContainerStatuses")]
     public IList<V1RevisionStatusInitContainerStatuses>? InitContainerStatuses { get; set; }
